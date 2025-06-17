@@ -1,5 +1,28 @@
+### Understanding Classification Approaches
 
+#### Discriminative vs Generative Classifiers
+1. **Discriminative Classifiers** (e.g., Linear Perceptrons)
+   - Learn decision boundaries directly
+   - Effective for well-separated classes
+   - Focus on class separation
+   - Simpler to implement
 
-Linear perceptrons allow us to learn a decision boundary that would separate two classes. They are very effective when there are only two classes, and they are well separated. Such classifiers are referred to as discriminative classifiers.
+2. **Generative Classifiers** (Bayesian Approach)
+   - Model each class as a random vector
+   - Use probability distributions/density functions
+   - Consider class likelihoods
+   - More flexible in handling complex data
 
-In contrast, generative classifiers consider each sample as a random vector, and explicity model each class by their distribution or density functions. To carry out the classification, we compute the likelihood that a given sample belong to each of the candidate classes, and assign the sample to the class that is most likely. In other words, we need to compute P(ωi/x) for each class ωi. However, the density functions provide only the likelihood of seeing a particular sample, given that the sample belongs to a specific class. i.e., the density functions provide us p(x/ωi). The Bayes rule provides us with an approach to compute the likelihood of the class for a given sample, from the density functions and related information.
+### Bayesian Classification
+The experiment focuses on understanding how Bayesian classification:
+- Computes class probabilities using Bayes' rule
+- Combines prior knowledge with observed evidence
+- Makes decisions based on posterior probabilities
+- Handles uncertainty in classification
+
+### Key Concepts
+- Prior probabilities
+- Likelihood functions
+- Posterior probabilities
+- Decision boundaries
+- Class density functions
