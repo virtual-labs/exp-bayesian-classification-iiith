@@ -1,28 +1,29 @@
-**Stage 1:**
+### Set Class Parameters
+In the **Parameters** section on the left side:
 
- 1. Lauch the experiment and clear the pane. Assign differnt means and covariances for each of the classes and observe the resulting densities. Use the mark-all button to observe the decision boundaries.
+   * You will see parameters for **Class 1** and **Class 2**.
+   * Each class has fields to set:
 
- 2. Note down your observations on the relationship between the decision boundaries and the density functions.
+     * Mean values (`Mean X`, `Mean Y`)
+     * Covariance matrix values (`Covariance XX`, `Covariance XY`, `Covariance YY`)
+     * Prior Probability (the probability of each class before seeing data)
 
-**Stage 2:**
+### Adjust Parameters as Desired
 
- 1. Repeat the above procedure for different values of prior probabilities.
+* Modify any of the values by clicking on the input box and typing new numbers.
+* The means define the center location of each class’s distribution.
+* The covariance matrix controls the shape and orientation of the distribution.
+* The prior probability defines how likely each class is, used for classification decisions.
 
- 2. Observe the change in the scaled density functions and decision boundaries
+### Visualize Classification
 
- 3. Note down your observations regarding the change of decision boundaries
+After setting the parameters, the visualization will automatically reflect these changes on the plot canvas (600x600 pixels) on the right.
 
-**Stage 3:**
+#### Use Buttons to Interact with the Plot
 
-Generate the following types of decision boundaries by varying the means and covariance matrices.
+* **Mark All:** Click the **Mark All** button to classify and mark all points in the visualization area based on the current parameters.
+* **Clear:** Click the **Clear** button to remove all marks and reset the plot display.
 
-  1. Straight line
-
-  2. Parallel Straight lines
- 
-  3. Concentric circles
-  4. Parabola
-  5. Hyperbola
-  6. Four Quadrants
-
-Explain why these shapes are generated in each case.
+#### Interpret the Visualization
+* The plot shows the 2D distributions for Class 1 and Class 2 based on your parameter inputs.
+* Points or areas marked correspond to the classification regions according to Bayesian decision rules.
